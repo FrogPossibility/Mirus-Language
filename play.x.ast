@@ -1,0 +1,537 @@
+{
+  "type": "program",
+  "body": [
+    {
+      "type": "function_definition",
+      "fun_name": {
+        "type": "identifier",
+        "value": "main",
+        "text": "main",
+        "offset": 0,
+        "lineBreaks": 0,
+        "line": 1,
+        "col": 1
+      },
+      "parameters": [],
+      "body": {
+        "type": "code_block",
+        "statements": [
+          {
+            "type": "assignment",
+            "var_name": {
+              "type": "identifier",
+              "value": "x",
+              "text": "x",
+              "offset": 14,
+              "lineBreaks": 0,
+              "line": 2,
+              "col": 5
+            },
+            "value": {
+              "type": "function_call",
+              "fun_name": {
+                "type": "identifier",
+                "value": "add",
+                "text": "add",
+                "offset": 18,
+                "lineBreaks": 0,
+                "line": 2,
+                "col": 9
+              },
+              "parameters": [
+                {
+                  "type": "number",
+                  "value": 1,
+                  "text": "1",
+                  "offset": 22,
+                  "lineBreaks": 0,
+                  "line": 2,
+                  "col": 13
+                },
+                {
+                  "type": "number",
+                  "value": 2,
+                  "text": "2",
+                  "offset": 24,
+                  "lineBreaks": 0,
+                  "line": 2,
+                  "col": 15
+                },
+                {
+                  "type": "number",
+                  "value": 3,
+                  "text": "3",
+                  "offset": 26,
+                  "lineBreaks": 0,
+                  "line": 2,
+                  "col": 17
+                },
+                {
+                  "type": "number",
+                  "value": 4,
+                  "text": "4",
+                  "offset": 28,
+                  "lineBreaks": 0,
+                  "line": 2,
+                  "col": 19
+                },
+                {
+                  "type": "number",
+                  "value": 5,
+                  "text": "5",
+                  "offset": 30,
+                  "lineBreaks": 0,
+                  "line": 2,
+                  "col": 21
+                },
+                {
+                  "type": "number",
+                  "value": 6,
+                  "text": "6",
+                  "offset": 32,
+                  "lineBreaks": 0,
+                  "line": 2,
+                  "col": 23
+                },
+                {
+                  "type": "number",
+                  "value": 7,
+                  "text": "7",
+                  "offset": 34,
+                  "lineBreaks": 0,
+                  "line": 2,
+                  "col": 25
+                },
+                {
+                  "type": "number",
+                  "value": 8,
+                  "text": "8",
+                  "offset": 36,
+                  "lineBreaks": 0,
+                  "line": 2,
+                  "col": 27
+                },
+                {
+                  "type": "number",
+                  "value": 9,
+                  "text": "9",
+                  "offset": 38,
+                  "lineBreaks": 0,
+                  "line": 2,
+                  "col": 29
+                }
+              ]
+            }
+          },
+          {
+            "type": "assignment",
+            "var_name": {
+              "type": "identifier",
+              "value": "y",
+              "text": "y",
+              "offset": 46,
+              "lineBreaks": 0,
+              "line": 3,
+              "col": 5
+            },
+            "value": {
+              "type": "function_call",
+              "fun_name": {
+                "type": "identifier",
+                "value": "mul",
+                "text": "mul",
+                "offset": 50,
+                "lineBreaks": 0,
+                "line": 3,
+                "col": 9
+              },
+              "parameters": [
+                {
+                  "type": "number",
+                  "value": 1,
+                  "text": "1",
+                  "offset": 54,
+                  "lineBreaks": 0,
+                  "line": 3,
+                  "col": 13
+                },
+                {
+                  "type": "number",
+                  "value": 2,
+                  "text": "2",
+                  "offset": 56,
+                  "lineBreaks": 0,
+                  "line": 3,
+                  "col": 15
+                },
+                {
+                  "type": "number",
+                  "value": 3,
+                  "text": "3",
+                  "offset": 58,
+                  "lineBreaks": 0,
+                  "line": 3,
+                  "col": 17
+                }
+              ]
+            }
+          },
+          {
+            "type": "function_call",
+            "fun_name": {
+              "type": "identifier",
+              "value": "print",
+              "text": "print",
+              "offset": 66,
+              "lineBreaks": 0,
+              "line": 4,
+              "col": 5
+            },
+            "parameters": [
+              {
+                "type": "string",
+                "value": "\"Sum is:\"",
+                "text": "\"Sum is:\"",
+                "offset": 72,
+                "lineBreaks": 0,
+                "line": 4,
+                "col": 11
+              },
+              {
+                "type": "identifier",
+                "value": "x",
+                "text": "x",
+                "offset": 82,
+                "lineBreaks": 0,
+                "line": 4,
+                "col": 21
+              }
+            ]
+          },
+          {
+            "type": "function_call",
+            "fun_name": {
+              "type": "identifier",
+              "value": "print",
+              "text": "print",
+              "offset": 90,
+              "lineBreaks": 0,
+              "line": 5,
+              "col": 5
+            },
+            "parameters": [
+              {
+                "type": "string",
+                "value": "\"Product is:\"",
+                "text": "\"Product is:\"",
+                "offset": 96,
+                "lineBreaks": 0,
+                "line": 5,
+                "col": 11
+              },
+              {
+                "type": "identifier",
+                "value": "y",
+                "text": "y",
+                "offset": 110,
+                "lineBreaks": 0,
+                "line": 5,
+                "col": 25
+              }
+            ]
+          },
+          {
+            "type": "function_call",
+            "fun_name": {
+              "type": "identifier",
+              "value": "if",
+              "text": "if",
+              "offset": 118,
+              "lineBreaks": 0,
+              "line": 6,
+              "col": 5
+            },
+            "parameters": [
+              {
+                "type": "function_call",
+                "fun_name": {
+                  "type": "identifier",
+                  "value": "gt",
+                  "text": "gt",
+                  "offset": 122,
+                  "lineBreaks": 0,
+                  "line": 6,
+                  "col": 9
+                },
+                "parameters": [
+                  {
+                    "type": "identifier",
+                    "value": "x",
+                    "text": "x",
+                    "offset": 125,
+                    "lineBreaks": 0,
+                    "line": 6,
+                    "col": 12
+                  },
+                  {
+                    "type": "identifier",
+                    "value": "y",
+                    "text": "y",
+                    "offset": 127,
+                    "lineBreaks": 0,
+                    "line": 6,
+                    "col": 14
+                  }
+                ]
+              },
+              {
+                "type": "code_block",
+                "statements": [
+                  {
+                    "type": "function_call",
+                    "fun_name": {
+                      "type": "identifier",
+                      "value": "print",
+                      "text": "print",
+                      "offset": 141,
+                      "lineBreaks": 0,
+                      "line": 7,
+                      "col": 9
+                    },
+                    "parameters": [
+                      {
+                        "type": "string",
+                        "value": "\"Sum is bigger than product\"",
+                        "text": "\"Sum is bigger than product\"",
+                        "offset": 147,
+                        "lineBreaks": 0,
+                        "line": 7,
+                        "col": 15
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "code_block",
+                "statements": [
+                  {
+                    "type": "function_call",
+                    "fun_name": {
+                      "type": "identifier",
+                      "value": "print",
+                      "text": "print",
+                      "offset": 195,
+                      "lineBreaks": 0,
+                      "line": 9,
+                      "col": 9
+                    },
+                    "parameters": [
+                      {
+                        "type": "string",
+                        "value": "\"Sum is less than product\"",
+                        "text": "\"Sum is less than product\"",
+                        "offset": 201,
+                        "lineBreaks": 0,
+                        "line": 9,
+                        "col": 15
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "main",
+        "text": "main",
+        "offset": 243,
+        "lineBreaks": 0,
+        "line": 13,
+        "col": 1
+      },
+      "parameters": []
+    },
+    {
+      "type": "function_definition",
+      "fun_name": {
+        "type": "identifier",
+        "value": "main2",
+        "text": "main2",
+        "offset": 255,
+        "lineBreaks": 0,
+        "line": 16,
+        "col": 1
+      },
+      "parameters": [],
+      "body": {
+        "type": "code_block",
+        "statements": [
+          {
+            "type": "assignment",
+            "var_name": {
+              "type": "identifier",
+              "value": "x",
+              "text": "x",
+              "offset": 270,
+              "lineBreaks": 0,
+              "line": 17,
+              "col": 5
+            },
+            "value": {
+              "type": "number",
+              "value": 3,
+              "text": "3",
+              "offset": 274,
+              "lineBreaks": 0,
+              "line": 17,
+              "col": 9
+            }
+          },
+          {
+            "type": "assignment",
+            "var_name": {
+              "type": "identifier",
+              "value": "y",
+              "text": "y",
+              "offset": 281,
+              "lineBreaks": 0,
+              "line": 18,
+              "col": 5
+            },
+            "value": {
+              "type": "number",
+              "value": 2,
+              "text": "2",
+              "offset": 285,
+              "lineBreaks": 0,
+              "line": 18,
+              "col": 9
+            }
+          },
+          {
+            "type": "function_call",
+            "fun_name": {
+              "type": "identifier",
+              "value": "if",
+              "text": "if",
+              "offset": 294,
+              "lineBreaks": 0,
+              "line": 20,
+              "col": 5
+            },
+            "parameters": [
+              {
+                "type": "function_call",
+                "fun_name": {
+                  "type": "identifier",
+                  "value": "gt",
+                  "text": "gt",
+                  "offset": 298,
+                  "lineBreaks": 0,
+                  "line": 20,
+                  "col": 9
+                },
+                "parameters": [
+                  {
+                    "type": "identifier",
+                    "value": "x",
+                    "text": "x",
+                    "offset": 301,
+                    "lineBreaks": 0,
+                    "line": 20,
+                    "col": 12
+                  },
+                  {
+                    "type": "identifier",
+                    "value": "y",
+                    "text": "y",
+                    "offset": 303,
+                    "lineBreaks": 0,
+                    "line": 20,
+                    "col": 14
+                  }
+                ]
+              },
+              {
+                "type": "code_block",
+                "statements": [
+                  {
+                    "type": "function_call",
+                    "fun_name": {
+                      "type": "identifier",
+                      "value": "print",
+                      "text": "print",
+                      "offset": 317,
+                      "lineBreaks": 0,
+                      "line": 21,
+                      "col": 9
+                    },
+                    "parameters": [
+                      {
+                        "type": "string",
+                        "value": "\"x è piu grande di y\"",
+                        "text": "\"x è piu grande di y\"",
+                        "offset": 323,
+                        "lineBreaks": 0,
+                        "line": 21,
+                        "col": 15
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "code_block",
+                "statements": [
+                  {
+                    "type": "function_call",
+                    "fun_name": {
+                      "type": "identifier",
+                      "value": "print",
+                      "text": "print",
+                      "offset": 364,
+                      "lineBreaks": 0,
+                      "line": 23,
+                      "col": 9
+                    },
+                    "parameters": [
+                      {
+                        "type": "string",
+                        "value": "\"x è piu piccolo di y\"",
+                        "text": "\"x è piu piccolo di y\"",
+                        "offset": 370,
+                        "lineBreaks": 0,
+                        "line": 23,
+                        "col": 15
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "main2",
+        "text": "main2",
+        "offset": 408,
+        "lineBreaks": 0,
+        "line": 27,
+        "col": 1
+      },
+      "parameters": []
+    }
+  ]
+}

@@ -1,166 +1,169 @@
-[
-  {
-    "type": "assignment",
-    "var_name": {
-      "type": "identifier",
-      "value": "n",
-      "text": "n",
-      "offset": 0,
-      "lineBreaks": 0,
-      "line": 1,
-      "col": 1
-    },
-    "value": {
-      "type": "number",
-      "value": 4,
-      "text": "4",
-      "offset": 4,
-      "lineBreaks": 0,
-      "line": 1,
-      "col": 5
-    }
-  },
-  {
-    "type": "assignment",
-    "var_name": {
-      "type": "identifier",
-      "value": "m",
-      "text": "m",
-      "offset": 7,
-      "lineBreaks": 0,
-      "line": 2,
-      "col": 1
-    },
-    "value": {
-      "type": "number",
-      "value": 5,
-      "text": "5",
-      "offset": 11,
-      "lineBreaks": 0,
-      "line": 2,
-      "col": 5
-    }
-  },
-  {
-    "type": "assignment",
-    "var_name": {
-      "type": "identifier",
-      "value": "o",
-      "text": "o",
-      "offset": 14,
-      "lineBreaks": 0,
-      "line": 3,
-      "col": 1
-    },
-    "value": {
-      "type": "string",
-      "value": "\"Hello, world!\"",
-      "text": "\"Hello, world!\"",
-      "offset": 18,
-      "lineBreaks": 0,
-      "line": 3,
-      "col": 5
-    }
-  },
-  {
-    "type": "function_call",
-    "fun_name": {
-      "type": "identifier",
-      "value": "print",
-      "text": "print",
-      "offset": 35,
-      "lineBreaks": 0,
-      "line": 4,
-      "col": 1
-    },
-    "parameters": [
-      {
+{
+  "type": "program",
+  "body": [
+    {
+      "type": "assignment",
+      "var_name": {
         "type": "identifier",
         "value": "n",
         "text": "n",
-        "offset": 41,
+        "offset": 0,
         "lineBreaks": 0,
-        "line": 4,
-        "col": 7
+        "line": 1,
+        "col": 1
       },
-      {
+      "value": {
+        "type": "number",
+        "value": 4,
+        "text": "4",
+        "offset": 4,
+        "lineBreaks": 0,
+        "line": 1,
+        "col": 5
+      }
+    },
+    {
+      "type": "assignment",
+      "var_name": {
         "type": "identifier",
         "value": "m",
         "text": "m",
-        "offset": 43,
+        "offset": 7,
         "lineBreaks": 0,
-        "line": 4,
-        "col": 9
-      }
-    ]
-  },
-  {
-    "type": "function_call",
-    "fun_name": {
-      "type": "identifier",
-      "value": "print",
-      "text": "print",
-      "offset": 47,
-      "lineBreaks": 0,
-      "line": 5,
-      "col": 1
-    },
-    "parameters": [
-      {
-        "type": "identifier",
-        "value": "o",
-        "text": "o",
-        "offset": 53,
-        "lineBreaks": 0,
-        "line": 5,
-        "col": 7
-      }
-    ]
-  },
-  {
-    "type": "function_call",
-    "fun_name": {
-      "type": "identifier",
-      "value": "print",
-      "text": "print",
-      "offset": 57,
-      "lineBreaks": 0,
-      "line": 6,
-      "col": 1
-    },
-    "parameters": [
-      {
+        "line": 2,
+        "col": 1
+      },
+      "value": {
         "type": "number",
         "value": 5,
         "text": "5",
-        "offset": 63,
+        "offset": 11,
+        "lineBreaks": 0,
+        "line": 2,
+        "col": 5
+      }
+    },
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "o",
+        "text": "o",
+        "offset": 14,
+        "lineBreaks": 0,
+        "line": 3,
+        "col": 1
+      },
+      "value": {
+        "type": "string",
+        "value": "\"Hello, world!\"",
+        "text": "\"Hello, world!\"",
+        "offset": 18,
+        "lineBreaks": 0,
+        "line": 3,
+        "col": 5
+      }
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "print",
+        "text": "print",
+        "offset": 35,
+        "lineBreaks": 0,
+        "line": 4,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "identifier",
+          "value": "n",
+          "text": "n",
+          "offset": 41,
+          "lineBreaks": 0,
+          "line": 4,
+          "col": 7
+        },
+        {
+          "type": "identifier",
+          "value": "m",
+          "text": "m",
+          "offset": 43,
+          "lineBreaks": 0,
+          "line": 4,
+          "col": 9
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "print",
+        "text": "print",
+        "offset": 47,
+        "lineBreaks": 0,
+        "line": 5,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "identifier",
+          "value": "o",
+          "text": "o",
+          "offset": 53,
+          "lineBreaks": 0,
+          "line": 5,
+          "col": 7
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "print",
+        "text": "print",
+        "offset": 57,
         "lineBreaks": 0,
         "line": 6,
-        "col": 7
-      }
-    ]
-  },
-  {
-    "type": "function_call",
-    "fun_name": {
-      "type": "identifier",
-      "value": "print",
-      "text": "print",
-      "offset": 67,
-      "lineBreaks": 0,
-      "line": 7,
-      "col": 1
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "number",
+          "value": 5,
+          "text": "5",
+          "offset": 63,
+          "lineBreaks": 0,
+          "line": 6,
+          "col": 7
+        }
+      ]
     },
-    "parameters": [
-      {
-        "type": "string",
-        "value": "\"Jah\"",
-        "text": "\"Jah\"",
-        "offset": 73,
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "print",
+        "text": "print",
+        "offset": 67,
         "lineBreaks": 0,
         "line": 7,
-        "col": 7
-      }
-    ]
-  }
-]
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "string",
+          "value": "\"Jah\"",
+          "text": "\"Jah\"",
+          "offset": 73,
+          "lineBreaks": 0,
+          "line": 7,
+          "col": 7
+        }
+      ]
+    }
+  ]
+}

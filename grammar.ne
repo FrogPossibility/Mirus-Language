@@ -4,25 +4,37 @@ const myLexer = require("./lexer");
 
 @lexer myLexer
 
+program
+    -> statements
+        {%
+            (data) => {
+               return {
+                type: "program",
+                body: data[0]
+               };
+            }
+        %}
+
 statements
     -> null
         {%
             () => []
         %}
-    |  statement
+    |  _ statement _ 
         {%
-            (data) => [data[0]] 
+            (data) => [data[1]] 
         %}
-    |  statement "\r\n" statements
+    |  _ statement _ "\r\n":+ statements
         {%
-            (data) => [data[0], ...data[2]]
+            (data) => [data[1], ...data[4]]
         %}
 
 statement
-    -> assignment     {% id %}
-    |  function_call  {% id %}
+    -> assignment           {% id %}
+    |  function_call        {% id %}
+    |  function_definition  {% id %}
 
-assignment -> %identifier _ "=" _ literal
+assignment -> %identifier _ "=" _ expression
     {%
         (data) => {
             return {
@@ -33,6 +45,7 @@ assignment -> %identifier _ "=" _ literal
         }
     %}
 
+# doIt(a b c)
 function_call -> %identifier _ "(" _ parameter_list _ ")"
     {%
         (data) => {
@@ -40,6 +53,33 @@ function_call -> %identifier _ "(" _ parameter_list _ ")"
                 type: "function_call",
                 fun_name: data[0],
                 parameters: data[4]
+            }
+        }
+    %}
+
+# doIt(a b c) [
+#    ...
+# ]
+function_definition -> 
+    %identifier _ "(" _ parameter_list _ ")"  _ code_block
+    {%
+        (data) => {
+            return {
+                type: "function_definition",
+                fun_name: data[0],
+                parameters: data[4],
+                body: data[8]
+            }
+        }
+    %}
+
+code_block -> "[" _ "\r\n" statements "\r\n" _ "]"
+    {%
+        (data) => {
+            return {
+                type: "code_block",
+                statements: data[3],
+
             }
         }
     %}
@@ -63,8 +103,10 @@ parameter_list
         %}
 
 expression
-    -> %identifier {% id %}
-    |  literal     {% id %}
+    -> %identifier   {% id %}
+    |  literal       {% id %}
+    |  function_call {% id %}
+    |  code_block    {% id %}
 
 literal
     -> %number {% id %}
