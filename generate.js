@@ -53,6 +53,22 @@ function $if(cond, consequent, alternate) {
         alternate();
     }
 }
+
+function each(arr, fun) {
+    return arr.forEach(fun);
+}
+
+function map(arr, fun) {
+    return arr.map(fun);
+}
+
+function filter(arr, fun) {
+    return arr.filter(fun);
+}
+
+function reduce(arr, fun, initValue) {
+    return arr.reduce(fun, initValue);
+}
 `;
 
 async function main() {
@@ -96,11 +112,14 @@ function generate(node) {
         const body = node.body.statements.map(generate).join(";\r\n") + ";";
         const identedBody = body.split("\r\n").map(line => "\t" + line).join("\r\n");
         return `function ${funName} (${params}) {\r\n${identedBody}\r\n}`;
-
     } else if (node.type === "code_block") {
         const body = node.statements.map(generate).join(";\r\n") + ";";
         const identedBody = body.split("\r\n").map(line => "\t" + line).join("\r\n");
-        return `function () {\r\n${identedBody}\r\n}`;
+        const params = node.parameters.map(generate).join(", ");
+        return `function (${params}) {\r\n${identedBody}\r\n}`;
+    } else if (node.type === "array_literal") {
+        const items = node.items.map(generate).join(", ");
+        return `[${items}]`;
     } else {
         throw new Error(`Unknown node type: ${node.type}`);
     }

@@ -1,15 +1,8 @@
-function main () {
-	let x = add(1, 2, 3, 4, 5, 6, 7, 8, 9);
-	let y = mul(1, 2, 3);
-	print("Sum is:", x);
-	print("Product is:", y);
-	$if(gt(x, y), function () {
-		print("Sum is bigger than product");
-	}, function () {
-		print("Sum is less than product");
-	});
-};
-main();
+let arr = [1, 2, 3, 4, 5, 6];
+print(arr);
+each(arr, function (item) {
+	print(mul(item, item));
+});
 
 /*
 Runtime functions:
@@ -61,4 +54,20 @@ function $if(cond, consequent, alternate) {
     } else {
         alternate();
     }
+}
+
+function each(arr, fun) {
+    return arr.forEach(fun);
+}
+
+function map(arr, fun) {
+    return arr.map(fun);
+}
+
+function filter(arr, fun) {
+    return arr.filter(fun);
+}
+
+function reduce(arr, fun, initValue) {
+    return arr.reduce(fun, initValue);
 }
