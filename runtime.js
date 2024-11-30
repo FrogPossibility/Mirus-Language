@@ -1,11 +1,3 @@
-let n = 4;
-let m = 5;
-let o = "Hello, world!";
-print(n, m);
-print(o);
-print(5);
-print("Jah");
-
 /*
 Runtime functions:
 */
@@ -50,12 +42,24 @@ function gt(x, y) {
     return x > y;
 }
 
+function eq(one, other) {
+    return one === other;
+}
+
 function $if(cond, consequent, alternate) {
     if (cond) {
-        consequent();
+        return consequent();
     } else {
-        alternate();
+        return alternate();
     }
+}
+
+function split(str, separator) {
+    return str.split(separator);
+}
+
+function at(arr, index) {
+    return arr[index];
 }
 
 function each(arr, fun) {
@@ -72,4 +76,24 @@ function filter(arr, fun) {
 
 function reduce(arr, fun, initValue) {
     return arr.reduce(fun, initValue);
+}
+
+function entries(map) {
+    return Array.from(map.entries());
+}
+
+function get(map, key) {
+    return map.get(key);
+}
+
+function set(map, key, value) {
+    map.set(key, value);
+}
+
+function size(setOrMap) {
+    return setOrMap.size;
+}
+
+function length(arr) {
+    return arr.length;
 }

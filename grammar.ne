@@ -61,7 +61,7 @@ function_call -> %identifier _ "(" _ expression_list _ ")"
 #    ...
 # ]
 function_definition -> 
-    %identifier _ "(" _ expression_list _ ")"  _ code_block
+    %identifier _ "(" _ expression_list _ ")"  _ code_block_wo_parameters
     {%
         (data) => {
             return {
@@ -74,15 +74,7 @@ function_definition ->
     %}
 
 code_block
-    -> "[" _ "\r\n" statements "\r\n" _ "]"
-        {%
-            (data) => {
-                return {
-                    type: "code_block",
-                    statements: data[3]
-                }
-            }
-        %}
+    -> code_block_wo_parameters
     |  "[" _ code_block_parameters _ "\r\n" statements "\r\n" _ "]"
         {%
             (data) => {
@@ -90,6 +82,17 @@ code_block
                     type: "code_block",
                     parameters: data[2],
                     statements: data[5]
+                }
+            }
+        %}
+
+code_block_wo_parameters
+    -> "[" _ "\r\n" statements "\r\n" _ "]"
+        {%
+            (data) => {
+                return {
+                    type: "code_block",
+                    statements: data[3]
                 }
             }
         %}
@@ -121,32 +124,105 @@ expression
     |  literal       {% id %}
     |  function_call {% id %}
     |  code_block    {% id %}
-    |  array_literal {% id %}
 
 literal
-    -> %number {% id %}
-    |  %string {% id %}
+    -> %number                  {% id %}
+    |  %string                  {% id %}
+    |  empty_collection_literal {% id %}
+    |  sequence_literal         {% id %}
+    |  dictionary_literal       {% id %}
 
 # { 1 2 3 4 }
-array_literal
-    -> "{" _ expression_list _ "}"
+# A sequence is either an array or a set
+# A collection is either a sequence or a dictionary
+# 
+sequence_literal
+    -> optional_tag "{" _ expression_list _ "}"
         {%
             (data) => {
+                const tagName = data[0] || "array";
+                if (tagName === "dict") {
+                    throw new Error("tagged a sequence as a dict");
+                }
                 return {
-                    type: "array_literal",
-                    items: data[2]
+                    type: tagName + "_literal",
+                    items: data[3]
                 }
             }
         %}
-    |   "{" _ "}"
+
+empty_collection_literal
+    -> optional_tag "{" _ "}"
         {% 
-            () => {
-                return {
-                    type: "array_literal",
-                    items: []
+            (data) => {
+                const tagName = data[0] || "array";
+                if (tagName === "dict") {
+                    return {
+                        type: "dict_literal",
+                        entries: [] // array of 2-element arrays: [key, value]
+                    };
+                } else {
+                    return {
+                        type: tagName + "_literal",
+                        items: []
+                    }
                 }
             }
         %}
+
+dictionary_literal
+    -> optional_tag "{" _ key_value_pair_list _ "}"
+        {%
+            (data) => {
+                const tagName = data[0] || "dict";
+                if (tagName !== "dict") {
+                    throw new Error("Tagged a dict as a " + tagName);
+                }
+                return {
+                    type: "dict_literal",
+                    entries: data[3]
+                };
+            }  
+        %}
+
+key_value_pair_list
+    -> key_value_pair
+        {%
+            (data) => {
+                return [data[0]];
+            }
+        %}
+    |  key_value_pair __ key_value_pair_list
+        {%
+            (data) => {
+                return [data[0], ...data[2]];
+            }
+        %}
+
+key_value_pair
+    -> expression _ ":" _ expression
+        {%
+            (data) => {
+                return [data[0], data[4]];
+            }
+        %}
+
+optional_tag 
+    -> null {% () => null %}
+    |  tag  {% id %}
+
+tag ->
+    "<" tag_name ">"
+    {%
+        (data) => {
+            return data[1].value;
+        }
+    %}
+
+tag_name
+    -> "array" {% id %}
+    |  "dict"  {% id %}
+    |  "set"   {% id %}
 
 # optional whitespace
 _

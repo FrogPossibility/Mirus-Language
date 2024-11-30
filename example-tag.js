@@ -1,11 +1,14 @@
-let n = 4;
-let m = 5;
-let o = "Hello, world!";
-print(n, m);
-print(o);
-print(5);
-print("Jah");
-
+let a_array = [1, 2, 3];
+let a_set = new Set([2, 4, 5]);
+let a_array2 = [1, 2, 3];
+let a_dict = new Map([["name", "Simone"], ["age", 10]]);
+let empty_array = [];
+let empty_array_tag = [];
+let empty_set = new Set([]);
+let empty_dict = new Map([]);
+print(a_set);
+print(empty_dict);
+print(a_dict);
 /*
 Runtime functions:
 */
@@ -50,11 +53,15 @@ function gt(x, y) {
     return x > y;
 }
 
+function eq(one, other) {
+    return one === other;
+}
+
 function $if(cond, consequent, alternate) {
     if (cond) {
-        consequent();
+        return consequent();
     } else {
-        alternate();
+        return alternate();
     }
 }
 

@@ -1,0 +1,327 @@
+{
+  "type": "program",
+  "body": [
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "a_array",
+        "text": "a_array",
+        "offset": 0,
+        "lineBreaks": 0,
+        "line": 1,
+        "col": 1
+      },
+      "value": {
+        "type": "array_literal",
+        "items": [
+          {
+            "type": "number",
+            "value": 1,
+            "text": "1",
+            "offset": 19,
+            "lineBreaks": 0,
+            "line": 1,
+            "col": 20
+          },
+          {
+            "type": "number",
+            "value": 2,
+            "text": "2",
+            "offset": 21,
+            "lineBreaks": 0,
+            "line": 1,
+            "col": 22
+          },
+          {
+            "type": "number",
+            "value": 3,
+            "text": "3",
+            "offset": 23,
+            "lineBreaks": 0,
+            "line": 1,
+            "col": 24
+          }
+        ]
+      }
+    },
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "a_set",
+        "text": "a_set",
+        "offset": 28,
+        "lineBreaks": 0,
+        "line": 2,
+        "col": 1
+      },
+      "value": {
+        "type": "set_literal",
+        "items": [
+          {
+            "type": "number",
+            "value": 2,
+            "text": "2",
+            "offset": 43,
+            "lineBreaks": 0,
+            "line": 2,
+            "col": 16
+          },
+          {
+            "type": "number",
+            "value": 4,
+            "text": "4",
+            "offset": 45,
+            "lineBreaks": 0,
+            "line": 2,
+            "col": 18
+          },
+          {
+            "type": "number",
+            "value": 5,
+            "text": "5",
+            "offset": 47,
+            "lineBreaks": 0,
+            "line": 2,
+            "col": 20
+          }
+        ]
+      }
+    },
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "a_array2",
+        "text": "a_array2",
+        "offset": 52,
+        "lineBreaks": 0,
+        "line": 3,
+        "col": 1
+      },
+      "value": {
+        "type": "array_literal",
+        "items": [
+          {
+            "type": "number",
+            "value": 1,
+            "text": "1",
+            "offset": 65,
+            "lineBreaks": 0,
+            "line": 3,
+            "col": 14
+          },
+          {
+            "type": "number",
+            "value": 2,
+            "text": "2",
+            "offset": 67,
+            "lineBreaks": 0,
+            "line": 3,
+            "col": 16
+          },
+          {
+            "type": "number",
+            "value": 3,
+            "text": "3",
+            "offset": 69,
+            "lineBreaks": 0,
+            "line": 3,
+            "col": 18
+          }
+        ]
+      }
+    },
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "a_dict",
+        "text": "a_dict",
+        "offset": 74,
+        "lineBreaks": 0,
+        "line": 4,
+        "col": 1
+      },
+      "value": {
+        "type": "dict_literal",
+        "entries": [
+          [
+            {
+              "type": "string",
+              "value": "\"name\"",
+              "text": "\"name\"",
+              "offset": 85,
+              "lineBreaks": 0,
+              "line": 4,
+              "col": 12
+            },
+            {
+              "type": "string",
+              "value": "\"Simone\"",
+              "text": "\"Simone\"",
+              "offset": 93,
+              "lineBreaks": 0,
+              "line": 4,
+              "col": 20
+            }
+          ],
+          [
+            {
+              "type": "string",
+              "value": "\"age\"",
+              "text": "\"age\"",
+              "offset": 102,
+              "lineBreaks": 0,
+              "line": 4,
+              "col": 29
+            },
+            {
+              "type": "number",
+              "value": 10,
+              "text": "10",
+              "offset": 109,
+              "lineBreaks": 0,
+              "line": 4,
+              "col": 36
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "empty_array",
+        "text": "empty_array",
+        "offset": 115,
+        "lineBreaks": 0,
+        "line": 5,
+        "col": 1
+      },
+      "value": {
+        "type": "array_literal",
+        "items": []
+      }
+    },
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "empty_array_tag",
+        "text": "empty_array_tag",
+        "offset": 133,
+        "lineBreaks": 0,
+        "line": 6,
+        "col": 1
+      },
+      "value": {
+        "type": "array_literal",
+        "items": []
+      }
+    },
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "empty_set",
+        "text": "empty_set",
+        "offset": 162,
+        "lineBreaks": 0,
+        "line": 7,
+        "col": 1
+      },
+      "value": {
+        "type": "set_literal",
+        "items": []
+      }
+    },
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "empty_dict",
+        "text": "empty_dict",
+        "offset": 183,
+        "lineBreaks": 0,
+        "line": 8,
+        "col": 1
+      },
+      "value": {
+        "type": "dict_literal",
+        "entries": []
+      }
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "print",
+        "text": "print",
+        "offset": 206,
+        "lineBreaks": 0,
+        "line": 9,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "identifier",
+          "value": "a_set",
+          "text": "a_set",
+          "offset": 212,
+          "lineBreaks": 0,
+          "line": 9,
+          "col": 7
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "print",
+        "text": "print",
+        "offset": 220,
+        "lineBreaks": 0,
+        "line": 10,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "identifier",
+          "value": "empty_dict",
+          "text": "empty_dict",
+          "offset": 226,
+          "lineBreaks": 0,
+          "line": 10,
+          "col": 7
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "print",
+        "text": "print",
+        "offset": 239,
+        "lineBreaks": 0,
+        "line": 11,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "identifier",
+          "value": "a_dict",
+          "text": "a_dict",
+          "offset": 245,
+          "lineBreaks": 0,
+          "line": 11,
+          "col": 7
+        }
+      ]
+    }
+  ]
+}
