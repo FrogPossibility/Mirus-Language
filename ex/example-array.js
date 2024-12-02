@@ -16,15 +16,10 @@ print("reduced", reduced);
 function sqr(n) {
 	return mul(n, n);
 };
-function scrivi(parola) {
-	return print(parola);
-};
-scrivi("ciao");
 function distance(x1, y1, x2, y2) {
 	return mul(sqr(sub(x1, x2)), sqr(sub(y1, y2)));
 };
 print("distance(3 4 8 9)", distance(3, 4, 8, 9));
-
 /*
 Runtime functions:
 */
@@ -73,12 +68,32 @@ function eq(one, other) {
     return one === other;
 }
 
-function $if(cond, consequent, alternate) {
-    if (cond) {
-        return consequent();
-    } else {
-        return alternate();
-    }
+function concat(...args) {
+    return args.reduce((sum, num) => sum + num, "");
+}
+
+function split(str, separator) {
+    return str.split(separator);
+}
+
+function join(arr, separator) {
+    return arr.join(separator);
+}
+
+function at(arr, index) {
+    return arr[index];
+}
+
+function substring(string, start, end) {
+    return string.substring(start, end);
+}
+
+function toUpperCase(string) {
+    return string.toUpperCase();
+}
+
+function toLowerCase(string) {
+    return string.toLowerCase();
 }
 
 function each(arr, fun) {
@@ -97,3 +112,30 @@ function reduce(arr, fun, initValue) {
     return arr.reduce(fun, initValue);
 }
 
+function entries(map) {
+    return Array.from(map.entries());
+}
+
+function get(map, key) {
+    return map.get(key);
+}
+
+function set(map, key, value) {
+    map.set(key, value);
+}
+
+function size(setOrMap) {
+    return setOrMap.size;
+}
+
+function length(arr) {
+    return arr.length;
+}
+
+function $if(cond, consequent, alternate) {
+    if (cond) {
+        return consequent();
+    } else {
+        return alternate();
+    }
+}
