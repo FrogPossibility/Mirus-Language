@@ -1,3 +1,22 @@
+function capitalize(string) {
+	let first = toUpperCase(at(string, 0));
+	let rest = substring(string, 1);
+	return concat(first, rest);
+};
+function toCamelCase(string) {
+	let parts = split(string, /[-_]/);
+	return join(map(parts, function (part, idx) {
+		return $if(eq(idx, 0), function () {
+			return part;
+		},function () {
+			return capitalize(part);
+		});
+	}), "");
+};
+print("\"\" =>", toCamelCase(""));
+print("the_stealth-warrior => ", toCamelCase("the_stealth-warrior"));
+print("The-Stealth-Warrior => ", toCamelCase("the_stealth-warrior"));
+print("A-B-C => ", toCamelCase("A-B-C"));
 /*
 Runtime functions:
 */
