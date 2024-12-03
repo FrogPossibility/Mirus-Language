@@ -67,6 +67,9 @@ function generate(node) {
         return ifStatement;
     } else if (node.type === "regex"){
         return node.value;
+    } else if (node.type === "comment") {
+        const bodyComments = node.statements.map(statement => statement.value).join(' ');
+        return `// ${bodyComments}`;
     } else {
         throw new Error(`Unknown node type: ${node.type}`);
     }

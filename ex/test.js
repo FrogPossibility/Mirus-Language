@@ -1,3 +1,33 @@
+// this is a mini test;
+// hi;
+output("test");
+let array_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+let set_1 = new Set([2, 4, 6, 8, 0]);
+let dictionary_1 = new Map([["name", "Simone"], ["surname", "Camoletto"], ["age", 14]]);
+output("dictionary:", dictionary_1);
+output("set:", set_1);
+output("array:", array_1);
+output("-----------");
+function output_function(n, m, word, word1) {
+	output("the word is:", word);
+	output("the number is:", n);
+	let dict_words = new Map([]);
+	set(dict_words, word, word1);
+	let o = add(n, m);
+	output("the dict of words is:", dict_words);
+	return output("the sum of", n, "and", m, "is:", o);
+};
+output_function(1, 10, "clock", "tennis");
+output("-----------");
+each(entries(dictionary_1), function (entry) {
+	let key = at(entry, 0);
+	let value = at(entry, 1);
+	return output(key, "=", value);
+});
+output("The dict has", size(dictionary_1), "entries in it.");
+output(get(dictionary_1, "age"));
+output(get(dictionary_1, "name"));
+output(get(dictionary_1, "surname"));
 /*
 Runtime functions:
 */
@@ -22,7 +52,7 @@ function div(x, y) {
     return x / y;
 }
 
-function remainder(x, y) {
+function mod(x, y) {
     return x % y;
 }
 

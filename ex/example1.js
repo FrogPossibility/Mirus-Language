@@ -1,16 +1,16 @@
 let n = 4;
 let m = 5;
 let o = "Hello, world!";
-print(n, m);
-print(o);
-print(5);
-print("Jah");
+output(n, m);
+output(o);
+output(5);
+output("Jah");
 
 /*
 Runtime functions:
 */
 
-function print(...args) {
+function output(...args) {
     console.log(...args);
 }
 

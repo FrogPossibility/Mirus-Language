@@ -6,14 +6,14 @@ let empty_array = [];
 let empty_array_tag = [];
 let empty_set = new Set([]);
 let empty_dict = new Map([]);
-print(a_set);
-print(empty_dict);
-print(a_dict);
+output(a_set);
+output(empty_dict);
+output(a_dict);
 /*
 Runtime functions:
 */
 
-function print(...args) {
+function output(...args) {
     console.log(...args);
 }
 

@@ -17,5 +17,6 @@ module.exports = moo.compile({
     greater_than:    '>',
     color:           ':',
     identifier:      /[a-zA-Z_][a-zA-Z0-9_]*/,
-    newline: { match: /\r?\n/, lineBreaks: true },
+    newline:         { match: /\r?\n/, lineBreaks: true },
+    comment:        { match: /\/\/[^\n]*/, lineBreaks: true },
 });

@@ -1,15 +1,15 @@
 let n = 4;
 $if(gt(n, 7), function () {
-	print("It's too big");
+	output("It's too big");
 }, function () {
-	print("It's fine");
+	output("It's fine");
 });
 
 /*
 Runtime functions:
 */
 
-function print(...args) {
+function output(...args) {
     console.log(...args);
 }
 

@@ -1,7 +1,7 @@
 function myFun (a, b, c) {
 	let m = add(a, b);
 	let n = mul(m, c);
-	print(m, n);
+	output(m, n);
 };
 myFun(1, 2, 3);
 
@@ -9,7 +9,7 @@ myFun(1, 2, 3);
 Runtime functions:
 */
 
-function print(...args) {
+function output(...args) {
     console.log(...args);
 }
 

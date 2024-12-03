@@ -73,8 +73,8 @@
               "type": "function_call",
               "fun_name": {
                 "type": "identifier",
-                "value": "print",
-                "text": "print",
+                "value": "output",
+                "text": "output",
                 "offset": 26,
                 "lineBreaks": 0,
                 "line": 3,
@@ -101,8 +101,8 @@
               "type": "function_call",
               "fun_name": {
                 "type": "identifier",
-                "value": "print",
-                "text": "print",
+                "value": "output",
+                "text": "output",
                 "offset": 58,
                 "lineBreaks": 0,
                 "line": 5,

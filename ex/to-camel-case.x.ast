@@ -387,8 +387,8 @@
       "type": "function_call",
       "fun_name": {
         "type": "identifier",
-        "value": "print",
-        "text": "print",
+        "value": "output",
+        "text": "output",
         "offset": 329,
         "lineBreaks": 0,
         "line": 18,
@@ -433,8 +433,8 @@
       "type": "function_call",
       "fun_name": {
         "type": "identifier",
-        "value": "print",
-        "text": "print",
+        "value": "output",
+        "text": "output",
         "offset": 363,
         "lineBreaks": 0,
         "line": 19,
@@ -479,8 +479,8 @@
       "type": "function_call",
       "fun_name": {
         "type": "identifier",
-        "value": "print",
-        "text": "print",
+        "value": "output",
+        "text": "output",
         "offset": 432,
         "lineBreaks": 0,
         "line": 20,
@@ -525,8 +525,8 @@
       "type": "function_call",
       "fun_name": {
         "type": "identifier",
-        "value": "print",
-        "text": "print",
+        "value": "output",
+        "text": "output",
         "offset": 501,
         "lineBreaks": 0,
         "line": 21,

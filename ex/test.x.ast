@@ -1,0 +1,1225 @@
+{
+  "type": "program",
+  "body": [
+    {
+      "type": "comment",
+      "statements": [
+        {
+          "type": "identifier",
+          "value": "this",
+          "text": "this",
+          "offset": 3,
+          "lineBreaks": 0,
+          "line": 1,
+          "col": 4
+        },
+        {
+          "type": "identifier",
+          "value": "is",
+          "text": "is",
+          "offset": 8,
+          "lineBreaks": 0,
+          "line": 1,
+          "col": 9
+        },
+        {
+          "type": "identifier",
+          "value": "a",
+          "text": "a",
+          "offset": 11,
+          "lineBreaks": 0,
+          "line": 1,
+          "col": 12
+        },
+        {
+          "type": "identifier",
+          "value": "mini",
+          "text": "mini",
+          "offset": 13,
+          "lineBreaks": 0,
+          "line": 1,
+          "col": 14
+        },
+        {
+          "type": "identifier",
+          "value": "test",
+          "text": "test",
+          "offset": 18,
+          "lineBreaks": 0,
+          "line": 1,
+          "col": 19
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "statements": [
+        {
+          "type": "identifier",
+          "value": "hi",
+          "text": "hi",
+          "offset": 27,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 4
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 33,
+        "lineBreaks": 0,
+        "line": 4,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "string",
+          "value": "\"test\"",
+          "text": "\"test\"",
+          "offset": 39,
+          "lineBreaks": 0,
+          "line": 4,
+          "col": 7
+        }
+      ]
+    },
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "array_1",
+        "text": "array_1",
+        "offset": 50,
+        "lineBreaks": 0,
+        "line": 6,
+        "col": 1
+      },
+      "value": {
+        "type": "array_literal",
+        "items": [
+          {
+            "type": "number",
+            "value": 1,
+            "text": "1",
+            "offset": 69,
+            "lineBreaks": 0,
+            "line": 6,
+            "col": 20
+          },
+          {
+            "type": "number",
+            "value": 2,
+            "text": "2",
+            "offset": 71,
+            "lineBreaks": 0,
+            "line": 6,
+            "col": 22
+          },
+          {
+            "type": "number",
+            "value": 3,
+            "text": "3",
+            "offset": 73,
+            "lineBreaks": 0,
+            "line": 6,
+            "col": 24
+          },
+          {
+            "type": "number",
+            "value": 4,
+            "text": "4",
+            "offset": 75,
+            "lineBreaks": 0,
+            "line": 6,
+            "col": 26
+          },
+          {
+            "type": "number",
+            "value": 5,
+            "text": "5",
+            "offset": 77,
+            "lineBreaks": 0,
+            "line": 6,
+            "col": 28
+          },
+          {
+            "type": "number",
+            "value": 6,
+            "text": "6",
+            "offset": 79,
+            "lineBreaks": 0,
+            "line": 6,
+            "col": 30
+          },
+          {
+            "type": "number",
+            "value": 7,
+            "text": "7",
+            "offset": 81,
+            "lineBreaks": 0,
+            "line": 6,
+            "col": 32
+          },
+          {
+            "type": "number",
+            "value": 8,
+            "text": "8",
+            "offset": 83,
+            "lineBreaks": 0,
+            "line": 6,
+            "col": 34
+          },
+          {
+            "type": "number",
+            "value": 9,
+            "text": "9",
+            "offset": 85,
+            "lineBreaks": 0,
+            "line": 6,
+            "col": 36
+          },
+          {
+            "type": "number",
+            "value": 0,
+            "text": "0",
+            "offset": 87,
+            "lineBreaks": 0,
+            "line": 6,
+            "col": 38
+          }
+        ]
+      }
+    },
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "set_1",
+        "text": "set_1",
+        "offset": 92,
+        "lineBreaks": 0,
+        "line": 7,
+        "col": 1
+      },
+      "value": {
+        "type": "set_literal",
+        "items": [
+          {
+            "type": "number",
+            "value": 2,
+            "text": "2",
+            "offset": 107,
+            "lineBreaks": 0,
+            "line": 7,
+            "col": 16
+          },
+          {
+            "type": "number",
+            "value": 4,
+            "text": "4",
+            "offset": 109,
+            "lineBreaks": 0,
+            "line": 7,
+            "col": 18
+          },
+          {
+            "type": "number",
+            "value": 6,
+            "text": "6",
+            "offset": 111,
+            "lineBreaks": 0,
+            "line": 7,
+            "col": 20
+          },
+          {
+            "type": "number",
+            "value": 8,
+            "text": "8",
+            "offset": 113,
+            "lineBreaks": 0,
+            "line": 7,
+            "col": 22
+          },
+          {
+            "type": "number",
+            "value": 0,
+            "text": "0",
+            "offset": 115,
+            "lineBreaks": 0,
+            "line": 7,
+            "col": 24
+          }
+        ]
+      }
+    },
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "dictionary_1",
+        "text": "dictionary_1",
+        "offset": 120,
+        "lineBreaks": 0,
+        "line": 8,
+        "col": 1
+      },
+      "value": {
+        "type": "dict_literal",
+        "entries": [
+          [
+            {
+              "type": "string",
+              "value": "\"name\"",
+              "text": "\"name\"",
+              "offset": 143,
+              "lineBreaks": 0,
+              "line": 8,
+              "col": 24
+            },
+            {
+              "type": "string",
+              "value": "\"Simone\"",
+              "text": "\"Simone\"",
+              "offset": 151,
+              "lineBreaks": 0,
+              "line": 8,
+              "col": 32
+            }
+          ],
+          [
+            {
+              "type": "string",
+              "value": "\"surname\"",
+              "text": "\"surname\"",
+              "offset": 161,
+              "lineBreaks": 0,
+              "line": 8,
+              "col": 42
+            },
+            {
+              "type": "string",
+              "value": "\"Camoletto\"",
+              "text": "\"Camoletto\"",
+              "offset": 172,
+              "lineBreaks": 0,
+              "line": 8,
+              "col": 53
+            }
+          ],
+          [
+            {
+              "type": "string",
+              "value": "\"age\"",
+              "text": "\"age\"",
+              "offset": 185,
+              "lineBreaks": 0,
+              "line": 8,
+              "col": 66
+            },
+            {
+              "type": "number",
+              "value": 14,
+              "text": "14",
+              "offset": 192,
+              "lineBreaks": 0,
+              "line": 8,
+              "col": 73
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 200,
+        "lineBreaks": 0,
+        "line": 10,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "string",
+          "value": "\"dictionary:\"",
+          "text": "\"dictionary:\"",
+          "offset": 206,
+          "lineBreaks": 0,
+          "line": 10,
+          "col": 7
+        },
+        {
+          "type": "identifier",
+          "value": "dictionary_1",
+          "text": "dictionary_1",
+          "offset": 220,
+          "lineBreaks": 0,
+          "line": 10,
+          "col": 21
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 235,
+        "lineBreaks": 0,
+        "line": 11,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "string",
+          "value": "\"set:\"",
+          "text": "\"set:\"",
+          "offset": 241,
+          "lineBreaks": 0,
+          "line": 11,
+          "col": 7
+        },
+        {
+          "type": "identifier",
+          "value": "set_1",
+          "text": "set_1",
+          "offset": 248,
+          "lineBreaks": 0,
+          "line": 11,
+          "col": 14
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 256,
+        "lineBreaks": 0,
+        "line": 12,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "string",
+          "value": "\"array:\"",
+          "text": "\"array:\"",
+          "offset": 262,
+          "lineBreaks": 0,
+          "line": 12,
+          "col": 7
+        },
+        {
+          "type": "identifier",
+          "value": "array_1",
+          "text": "array_1",
+          "offset": 271,
+          "lineBreaks": 0,
+          "line": 12,
+          "col": 16
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 283,
+        "lineBreaks": 0,
+        "line": 14,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "string",
+          "value": "\"-----------\"",
+          "text": "\"-----------\"",
+          "offset": 289,
+          "lineBreaks": 0,
+          "line": 14,
+          "col": 7
+        }
+      ]
+    },
+    {
+      "type": "function_definition",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output_function",
+        "text": "output_function",
+        "offset": 307,
+        "lineBreaks": 0,
+        "line": 16,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "identifier",
+          "value": "n",
+          "text": "n",
+          "offset": 322,
+          "lineBreaks": 0,
+          "line": 16,
+          "col": 16
+        },
+        {
+          "type": "identifier",
+          "value": "m",
+          "text": "m",
+          "offset": 324,
+          "lineBreaks": 0,
+          "line": 16,
+          "col": 18
+        },
+        {
+          "type": "identifier",
+          "value": "word",
+          "text": "word",
+          "offset": 326,
+          "lineBreaks": 0,
+          "line": 16,
+          "col": 20
+        },
+        {
+          "type": "identifier",
+          "value": "word1",
+          "text": "word1",
+          "offset": 331,
+          "lineBreaks": 0,
+          "line": 16,
+          "col": 25
+        }
+      ],
+      "body": {
+        "type": "code_block",
+        "statements": [
+          {
+            "type": "function_call",
+            "fun_name": {
+              "type": "identifier",
+              "value": "output",
+              "text": "output",
+              "offset": 345,
+              "lineBreaks": 0,
+              "line": 17,
+              "col": 5
+            },
+            "parameters": [
+              {
+                "type": "string",
+                "value": "\"the word is:\"",
+                "text": "\"the word is:\"",
+                "offset": 351,
+                "lineBreaks": 0,
+                "line": 17,
+                "col": 11
+              },
+              {
+                "type": "identifier",
+                "value": "word",
+                "text": "word",
+                "offset": 366,
+                "lineBreaks": 0,
+                "line": 17,
+                "col": 26
+              }
+            ]
+          },
+          {
+            "type": "function_call",
+            "fun_name": {
+              "type": "identifier",
+              "value": "output",
+              "text": "output",
+              "offset": 377,
+              "lineBreaks": 0,
+              "line": 18,
+              "col": 5
+            },
+            "parameters": [
+              {
+                "type": "string",
+                "value": "\"the number is:\"",
+                "text": "\"the number is:\"",
+                "offset": 383,
+                "lineBreaks": 0,
+                "line": 18,
+                "col": 11
+              },
+              {
+                "type": "identifier",
+                "value": "n",
+                "text": "n",
+                "offset": 400,
+                "lineBreaks": 0,
+                "line": 18,
+                "col": 28
+              }
+            ]
+          },
+          {
+            "type": "assignment",
+            "var_name": {
+              "type": "identifier",
+              "value": "dict_words",
+              "text": "dict_words",
+              "offset": 410,
+              "lineBreaks": 0,
+              "line": 20,
+              "col": 5
+            },
+            "value": {
+              "type": "dict_literal",
+              "entries": []
+            }
+          },
+          {
+            "type": "function_call",
+            "fun_name": {
+              "type": "identifier",
+              "value": "set",
+              "text": "set",
+              "offset": 437,
+              "lineBreaks": 0,
+              "line": 21,
+              "col": 5
+            },
+            "parameters": [
+              {
+                "type": "identifier",
+                "value": "dict_words",
+                "text": "dict_words",
+                "offset": 441,
+                "lineBreaks": 0,
+                "line": 21,
+                "col": 9
+              },
+              {
+                "type": "identifier",
+                "value": "word",
+                "text": "word",
+                "offset": 452,
+                "lineBreaks": 0,
+                "line": 21,
+                "col": 20
+              },
+              {
+                "type": "identifier",
+                "value": "word1",
+                "text": "word1",
+                "offset": 457,
+                "lineBreaks": 0,
+                "line": 21,
+                "col": 25
+              }
+            ]
+          },
+          {
+            "type": "assignment",
+            "var_name": {
+              "type": "identifier",
+              "value": "o",
+              "text": "o",
+              "offset": 469,
+              "lineBreaks": 0,
+              "line": 22,
+              "col": 5
+            },
+            "value": {
+              "type": "function_call",
+              "fun_name": {
+                "type": "identifier",
+                "value": "add",
+                "text": "add",
+                "offset": 473,
+                "lineBreaks": 0,
+                "line": 22,
+                "col": 9
+              },
+              "parameters": [
+                {
+                  "type": "identifier",
+                  "value": "n",
+                  "text": "n",
+                  "offset": 477,
+                  "lineBreaks": 0,
+                  "line": 22,
+                  "col": 13
+                },
+                {
+                  "type": "identifier",
+                  "value": "m",
+                  "text": "m",
+                  "offset": 479,
+                  "lineBreaks": 0,
+                  "line": 22,
+                  "col": 15
+                }
+              ]
+            }
+          },
+          {
+            "type": "function_call",
+            "fun_name": {
+              "type": "identifier",
+              "value": "output",
+              "text": "output",
+              "offset": 489,
+              "lineBreaks": 0,
+              "line": 24,
+              "col": 5
+            },
+            "parameters": [
+              {
+                "type": "string",
+                "value": "\"the dict of words is:\"",
+                "text": "\"the dict of words is:\"",
+                "offset": 495,
+                "lineBreaks": 0,
+                "line": 24,
+                "col": 11
+              },
+              {
+                "type": "identifier",
+                "value": "dict_words",
+                "text": "dict_words",
+                "offset": 519,
+                "lineBreaks": 0,
+                "line": 24,
+                "col": 35
+              }
+            ]
+          },
+          {
+            "type": "function_call",
+            "fun_name": {
+              "type": "identifier",
+              "value": "output",
+              "text": "output",
+              "offset": 536,
+              "lineBreaks": 0,
+              "line": 25,
+              "col": 5
+            },
+            "parameters": [
+              {
+                "type": "string",
+                "value": "\"the sum of\"",
+                "text": "\"the sum of\"",
+                "offset": 542,
+                "lineBreaks": 0,
+                "line": 25,
+                "col": 11
+              },
+              {
+                "type": "identifier",
+                "value": "n",
+                "text": "n",
+                "offset": 555,
+                "lineBreaks": 0,
+                "line": 25,
+                "col": 24
+              },
+              {
+                "type": "string",
+                "value": "\"and\"",
+                "text": "\"and\"",
+                "offset": 557,
+                "lineBreaks": 0,
+                "line": 25,
+                "col": 26
+              },
+              {
+                "type": "identifier",
+                "value": "m",
+                "text": "m",
+                "offset": 563,
+                "lineBreaks": 0,
+                "line": 25,
+                "col": 32
+              },
+              {
+                "type": "string",
+                "value": "\"is:\"",
+                "text": "\"is:\"",
+                "offset": 565,
+                "lineBreaks": 0,
+                "line": 25,
+                "col": 34
+              },
+              {
+                "type": "identifier",
+                "value": "o",
+                "text": "o",
+                "offset": 571,
+                "lineBreaks": 0,
+                "line": 25,
+                "col": 40
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output_function",
+        "text": "output_function",
+        "offset": 580,
+        "lineBreaks": 0,
+        "line": 28,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "number",
+          "value": 1,
+          "text": "1",
+          "offset": 595,
+          "lineBreaks": 0,
+          "line": 28,
+          "col": 16
+        },
+        {
+          "type": "number",
+          "value": 10,
+          "text": "10",
+          "offset": 597,
+          "lineBreaks": 0,
+          "line": 28,
+          "col": 18
+        },
+        {
+          "type": "string",
+          "value": "\"clock\"",
+          "text": "\"clock\"",
+          "offset": 600,
+          "lineBreaks": 0,
+          "line": 28,
+          "col": 21
+        },
+        {
+          "type": "string",
+          "value": "\"tennis\"",
+          "text": "\"tennis\"",
+          "offset": 608,
+          "lineBreaks": 0,
+          "line": 28,
+          "col": 29
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 621,
+        "lineBreaks": 0,
+        "line": 30,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "string",
+          "value": "\"-----------\"",
+          "text": "\"-----------\"",
+          "offset": 627,
+          "lineBreaks": 0,
+          "line": 30,
+          "col": 7
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "each",
+        "text": "each",
+        "offset": 645,
+        "lineBreaks": 0,
+        "line": 32,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "function_call",
+          "fun_name": {
+            "type": "identifier",
+            "value": "entries",
+            "text": "entries",
+            "offset": 650,
+            "lineBreaks": 0,
+            "line": 32,
+            "col": 6
+          },
+          "parameters": [
+            {
+              "type": "identifier",
+              "value": "dictionary_1",
+              "text": "dictionary_1",
+              "offset": 658,
+              "lineBreaks": 0,
+              "line": 32,
+              "col": 14
+            }
+          ]
+        },
+        {
+          "type": "code_block",
+          "parameters": [
+            {
+              "type": "identifier",
+              "value": "entry",
+              "text": "entry",
+              "offset": 674,
+              "lineBreaks": 0,
+              "line": 32,
+              "col": 30
+            }
+          ],
+          "statements": [
+            {
+              "type": "assignment",
+              "var_name": {
+                "type": "identifier",
+                "value": "key",
+                "text": "key",
+                "offset": 686,
+                "lineBreaks": 0,
+                "line": 33,
+                "col": 5
+              },
+              "value": {
+                "type": "function_call",
+                "fun_name": {
+                  "type": "identifier",
+                  "value": "at",
+                  "text": "at",
+                  "offset": 692,
+                  "lineBreaks": 0,
+                  "line": 33,
+                  "col": 11
+                },
+                "parameters": [
+                  {
+                    "type": "identifier",
+                    "value": "entry",
+                    "text": "entry",
+                    "offset": 695,
+                    "lineBreaks": 0,
+                    "line": 33,
+                    "col": 14
+                  },
+                  {
+                    "type": "number",
+                    "value": 0,
+                    "text": "0",
+                    "offset": 701,
+                    "lineBreaks": 0,
+                    "line": 33,
+                    "col": 20
+                  }
+                ]
+              }
+            },
+            {
+              "type": "assignment",
+              "var_name": {
+                "type": "identifier",
+                "value": "value",
+                "text": "value",
+                "offset": 709,
+                "lineBreaks": 0,
+                "line": 34,
+                "col": 5
+              },
+              "value": {
+                "type": "function_call",
+                "fun_name": {
+                  "type": "identifier",
+                  "value": "at",
+                  "text": "at",
+                  "offset": 717,
+                  "lineBreaks": 0,
+                  "line": 34,
+                  "col": 13
+                },
+                "parameters": [
+                  {
+                    "type": "identifier",
+                    "value": "entry",
+                    "text": "entry",
+                    "offset": 720,
+                    "lineBreaks": 0,
+                    "line": 34,
+                    "col": 16
+                  },
+                  {
+                    "type": "number",
+                    "value": 1,
+                    "text": "1",
+                    "offset": 726,
+                    "lineBreaks": 0,
+                    "line": 34,
+                    "col": 22
+                  }
+                ]
+              }
+            },
+            {
+              "type": "function_call",
+              "fun_name": {
+                "type": "identifier",
+                "value": "output",
+                "text": "output",
+                "offset": 734,
+                "lineBreaks": 0,
+                "line": 35,
+                "col": 5
+              },
+              "parameters": [
+                {
+                  "type": "identifier",
+                  "value": "key",
+                  "text": "key",
+                  "offset": 740,
+                  "lineBreaks": 0,
+                  "line": 35,
+                  "col": 11
+                },
+                {
+                  "type": "string",
+                  "value": "\"=\"",
+                  "text": "\"=\"",
+                  "offset": 744,
+                  "lineBreaks": 0,
+                  "line": 35,
+                  "col": 15
+                },
+                {
+                  "type": "identifier",
+                  "value": "value",
+                  "text": "value",
+                  "offset": 748,
+                  "lineBreaks": 0,
+                  "line": 35,
+                  "col": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 762,
+        "lineBreaks": 0,
+        "line": 38,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "string",
+          "value": "\"The dict has\"",
+          "text": "\"The dict has\"",
+          "offset": 768,
+          "lineBreaks": 0,
+          "line": 38,
+          "col": 7
+        },
+        {
+          "type": "function_call",
+          "fun_name": {
+            "type": "identifier",
+            "value": "size",
+            "text": "size",
+            "offset": 783,
+            "lineBreaks": 0,
+            "line": 38,
+            "col": 22
+          },
+          "parameters": [
+            {
+              "type": "identifier",
+              "value": "dictionary_1",
+              "text": "dictionary_1",
+              "offset": 788,
+              "lineBreaks": 0,
+              "line": 38,
+              "col": 27
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "value": "\"entries in it.\"",
+          "text": "\"entries in it.\"",
+          "offset": 802,
+          "lineBreaks": 0,
+          "line": 38,
+          "col": 41
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 821,
+        "lineBreaks": 0,
+        "line": 39,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "function_call",
+          "fun_name": {
+            "type": "identifier",
+            "value": "get",
+            "text": "get",
+            "offset": 827,
+            "lineBreaks": 0,
+            "line": 39,
+            "col": 7
+          },
+          "parameters": [
+            {
+              "type": "identifier",
+              "value": "dictionary_1",
+              "text": "dictionary_1",
+              "offset": 831,
+              "lineBreaks": 0,
+              "line": 39,
+              "col": 11
+            },
+            {
+              "type": "string",
+              "value": "\"age\"",
+              "text": "\"age\"",
+              "offset": 844,
+              "lineBreaks": 0,
+              "line": 39,
+              "col": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 853,
+        "lineBreaks": 0,
+        "line": 40,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "function_call",
+          "fun_name": {
+            "type": "identifier",
+            "value": "get",
+            "text": "get",
+            "offset": 859,
+            "lineBreaks": 0,
+            "line": 40,
+            "col": 7
+          },
+          "parameters": [
+            {
+              "type": "identifier",
+              "value": "dictionary_1",
+              "text": "dictionary_1",
+              "offset": 863,
+              "lineBreaks": 0,
+              "line": 40,
+              "col": 11
+            },
+            {
+              "type": "string",
+              "value": "\"name\"",
+              "text": "\"name\"",
+              "offset": 876,
+              "lineBreaks": 0,
+              "line": 40,
+              "col": 24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 886,
+        "lineBreaks": 0,
+        "line": 41,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "function_call",
+          "fun_name": {
+            "type": "identifier",
+            "value": "get",
+            "text": "get",
+            "offset": 892,
+            "lineBreaks": 0,
+            "line": 41,
+            "col": 7
+          },
+          "parameters": [
+            {
+              "type": "identifier",
+              "value": "dictionary_1",
+              "text": "dictionary_1",
+              "offset": 896,
+              "lineBreaks": 0,
+              "line": 41,
+              "col": 11
+            },
+            {
+              "type": "string",
+              "value": "\"surname\"",
+              "text": "\"surname\"",
+              "offset": 909,
+              "lineBreaks": 0,
+              "line": 41,
+              "col": 24
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -31,6 +31,7 @@ var grammar = {
     {"name": "statement", "symbols": ["function_definition"], "postprocess": id},
     {"name": "statement", "symbols": ["if_statement"], "postprocess": id},
     {"name": "statement", "symbols": [(myLexer.has("identifier") ? {type: "identifier"} : identifier)], "postprocess": id},
+    {"name": "statement", "symbols": ["comment"], "postprocess": id},
     {"name": "assignment", "symbols": [(myLexer.has("identifier") ? {type: "identifier"} : identifier), "_", {"literal":"="}, "_", "expression"], "postprocess": 
         (data) => {
             return {
@@ -90,6 +91,14 @@ var grammar = {
     {"name": "expression_list", "symbols": ["expression", "__", "expression_list"], "postprocess": 
         (data) => {
             return [data[0], ...data[2]]
+        }
+                },
+    {"name": "comment", "symbols": [{"literal":"//"}, "_", "expression_list"], "postprocess": 
+        (data) => {
+            return {
+                type: "comment",
+                statements: [...data[2]]
+            }
         }
                 },
     {"name": "expression", "symbols": [(myLexer.has("identifier") ? {type: "identifier"} : identifier)], "postprocess": id},

@@ -35,6 +35,7 @@ statement
     |  function_definition  {% id %}
     |  if_statement         {% id %}
     |  %identifier          {% id %}
+    |  comment              {% id %}
 
 assignment -> %identifier _ "=" _ expression
     {%
@@ -118,6 +119,17 @@ expression_list
         {%
             (data) => {
                 return [data[0], ...data[2]]
+            }
+        %}
+
+comment 
+    -> "//" _ expression_list
+        {%
+            (data) => {
+                return {
+                    type: "comment",
+                    statements: [...data[2]]
+                }
             }
         %}
 

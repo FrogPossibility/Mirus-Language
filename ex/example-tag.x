@@ -6,6 +6,6 @@ empty_array = {}
 empty_array_tag = <array>{}
 empty_set = <set>{}
 empty_dict = <dict>{}
-print(a_set)
-print(empty_dict)
-print(a_dict)
+output(a_set)
+output(empty_dict)
+output(a_dict)

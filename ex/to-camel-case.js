@@ -13,15 +13,15 @@ function toCamelCase(string) {
 		});
 	}), "");
 };
-print("\"\" =>", toCamelCase(""));
-print("the_stealth-warrior => ", toCamelCase("the_stealth-warrior"));
-print("The-Stealth-Warrior => ", toCamelCase("the_stealth-warrior"));
-print("A-B-C => ", toCamelCase("A-B-C"));
+output("\"\" =>", toCamelCase(""));
+output("the_stealth-warrior => ", toCamelCase("the_stealth-warrior"));
+output("The-Stealth-Warrior => ", toCamelCase("the_stealth-warrior"));
+output("A-B-C => ", toCamelCase("A-B-C"));
 /*
 Runtime functions:
 */
 
-function print(...args) {
+function output(...args) {
     console.log(...args);
 }
 

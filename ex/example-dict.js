@@ -2,20 +2,20 @@ let dict1 = new Map([[1, 2], [3, 4]]);
 let dict2 = new Map([["a", 2], ["b", 4]]);
 let dict3 = new Map([]);
 set(dict3, "foo", "bar");
-print(get(dict3, "foo"));
+output(get(dict3, "foo"));
 set(dict3, "garage", "out");
-print(dict3);
-print("The dict has", size(dict3), "entries in it.");
+output(dict3);
+output("The dict has", size(dict3), "entries in it.");
 each(entries(dict3), function (entry) {
 	let key = at(entry, 0);
 	let value = at(entry, 1);
-	return print(key, "=", value);
+	return output(key, "=", value);
 });
 /*
 Runtime functions:
 */
 
-function print(...args) {
+function output(...args) {
     console.log(...args);
 }
 

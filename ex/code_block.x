@@ -1,3 +1,3 @@
 x = [
-    print("hello")
+    output("hello")
 ]
