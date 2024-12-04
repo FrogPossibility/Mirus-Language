@@ -1,0 +1,523 @@
+{
+  "type": "program",
+  "body": [
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "dict1",
+        "text": "dict1",
+        "offset": 0,
+        "lineBreaks": 0,
+        "line": 1,
+        "col": 1
+      },
+      "value": {
+        "type": "dict_literal",
+        "entries": [
+          [
+            {
+              "type": "number",
+              "value": 1,
+              "text": "1",
+              "offset": 16,
+              "lineBreaks": 0,
+              "line": 1,
+              "col": 17
+            },
+            {
+              "type": "number",
+              "value": 2,
+              "text": "2",
+              "offset": 19,
+              "lineBreaks": 0,
+              "line": 1,
+              "col": 20
+            }
+          ],
+          [
+            {
+              "type": "number",
+              "value": 3,
+              "text": "3",
+              "offset": 22,
+              "lineBreaks": 0,
+              "line": 1,
+              "col": 23
+            },
+            {
+              "type": "number",
+              "value": 4,
+              "text": "4",
+              "offset": 25,
+              "lineBreaks": 0,
+              "line": 1,
+              "col": 26
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "dict2",
+        "text": "dict2",
+        "offset": 30,
+        "lineBreaks": 0,
+        "line": 2,
+        "col": 1
+      },
+      "value": {
+        "type": "dict_literal",
+        "entries": [
+          [
+            {
+              "type": "string",
+              "value": "\"a\"",
+              "text": "\"a\"",
+              "offset": 40,
+              "lineBreaks": 0,
+              "line": 2,
+              "col": 11
+            },
+            {
+              "type": "number",
+              "value": 2,
+              "text": "2",
+              "offset": 45,
+              "lineBreaks": 0,
+              "line": 2,
+              "col": 16
+            }
+          ],
+          [
+            {
+              "type": "string",
+              "value": "\"b\"",
+              "text": "\"b\"",
+              "offset": 48,
+              "lineBreaks": 0,
+              "line": 2,
+              "col": 19
+            },
+            {
+              "type": "number",
+              "value": 4,
+              "text": "4",
+              "offset": 53,
+              "lineBreaks": 0,
+              "line": 2,
+              "col": 24
+            }
+          ]
+        ]
+      }
+    },
+    {
+      "type": "assignment",
+      "var_name": {
+        "type": "identifier",
+        "value": "dict3",
+        "text": "dict3",
+        "offset": 58,
+        "lineBreaks": 0,
+        "line": 3,
+        "col": 1
+      },
+      "value": {
+        "type": "dict_literal",
+        "entries": []
+      }
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "set",
+        "text": "set",
+        "offset": 78,
+        "lineBreaks": 0,
+        "line": 5,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "identifier",
+          "value": "dict3",
+          "text": "dict3",
+          "offset": 82,
+          "lineBreaks": 0,
+          "line": 5,
+          "col": 5
+        },
+        {
+          "type": "string",
+          "value": "\"foo\"",
+          "text": "\"foo\"",
+          "offset": 88,
+          "lineBreaks": 0,
+          "line": 5,
+          "col": 11
+        },
+        {
+          "type": "string",
+          "value": "\"bar\"",
+          "text": "\"bar\"",
+          "offset": 94,
+          "lineBreaks": 0,
+          "line": 5,
+          "col": 17
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 102,
+        "lineBreaks": 0,
+        "line": 6,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "function_call",
+          "fun_name": {
+            "type": "identifier",
+            "value": "get",
+            "text": "get",
+            "offset": 109,
+            "lineBreaks": 0,
+            "line": 6,
+            "col": 8
+          },
+          "parameters": [
+            {
+              "type": "identifier",
+              "value": "dict3",
+              "text": "dict3",
+              "offset": 113,
+              "lineBreaks": 0,
+              "line": 6,
+              "col": 12
+            },
+            {
+              "type": "string",
+              "value": "\"foo\"",
+              "text": "\"foo\"",
+              "offset": 119,
+              "lineBreaks": 0,
+              "line": 6,
+              "col": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "set",
+        "text": "set",
+        "offset": 128,
+        "lineBreaks": 0,
+        "line": 7,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "identifier",
+          "value": "dict3",
+          "text": "dict3",
+          "offset": 132,
+          "lineBreaks": 0,
+          "line": 7,
+          "col": 5
+        },
+        {
+          "type": "string",
+          "value": "\"garage\"",
+          "text": "\"garage\"",
+          "offset": 138,
+          "lineBreaks": 0,
+          "line": 7,
+          "col": 11
+        },
+        {
+          "type": "string",
+          "value": "\"out\"",
+          "text": "\"out\"",
+          "offset": 147,
+          "lineBreaks": 0,
+          "line": 7,
+          "col": 20
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 155,
+        "lineBreaks": 0,
+        "line": 8,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "identifier",
+          "value": "dict3",
+          "text": "dict3",
+          "offset": 162,
+          "lineBreaks": 0,
+          "line": 8,
+          "col": 8
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 170,
+        "lineBreaks": 0,
+        "line": 9,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "string",
+          "value": "\"The dict has\"",
+          "text": "\"The dict has\"",
+          "offset": 177,
+          "lineBreaks": 0,
+          "line": 9,
+          "col": 8
+        },
+        {
+          "type": "function_call",
+          "fun_name": {
+            "type": "identifier",
+            "value": "size",
+            "text": "size",
+            "offset": 192,
+            "lineBreaks": 0,
+            "line": 9,
+            "col": 23
+          },
+          "parameters": [
+            {
+              "type": "identifier",
+              "value": "dict3",
+              "text": "dict3",
+              "offset": 197,
+              "lineBreaks": 0,
+              "line": 9,
+              "col": 28
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "value": "\"entries in it.\"",
+          "text": "\"entries in it.\"",
+          "offset": 204,
+          "lineBreaks": 0,
+          "line": 9,
+          "col": 35
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "each",
+        "text": "each",
+        "offset": 225,
+        "lineBreaks": 0,
+        "line": 11,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "function_call",
+          "fun_name": {
+            "type": "identifier",
+            "value": "entries",
+            "text": "entries",
+            "offset": 230,
+            "lineBreaks": 0,
+            "line": 11,
+            "col": 6
+          },
+          "parameters": [
+            {
+              "type": "identifier",
+              "value": "dict3",
+              "text": "dict3",
+              "offset": 238,
+              "lineBreaks": 0,
+              "line": 11,
+              "col": 14
+            }
+          ]
+        },
+        {
+          "type": "code_block",
+          "parameters": [
+            {
+              "type": "identifier",
+              "value": "entry",
+              "text": "entry",
+              "offset": 248,
+              "lineBreaks": 0,
+              "line": 11,
+              "col": 24
+            }
+          ],
+          "statements": [
+            {
+              "type": "assignment",
+              "var_name": {
+                "type": "identifier",
+                "value": "key",
+                "text": "key",
+                "offset": 260,
+                "lineBreaks": 0,
+                "line": 12,
+                "col": 5
+              },
+              "value": {
+                "type": "function_call",
+                "fun_name": {
+                  "type": "identifier",
+                  "value": "at",
+                  "text": "at",
+                  "offset": 266,
+                  "lineBreaks": 0,
+                  "line": 12,
+                  "col": 11
+                },
+                "parameters": [
+                  {
+                    "type": "identifier",
+                    "value": "entry",
+                    "text": "entry",
+                    "offset": 269,
+                    "lineBreaks": 0,
+                    "line": 12,
+                    "col": 14
+                  },
+                  {
+                    "type": "number",
+                    "value": 0,
+                    "text": "0",
+                    "offset": 275,
+                    "lineBreaks": 0,
+                    "line": 12,
+                    "col": 20
+                  }
+                ]
+              }
+            },
+            {
+              "type": "assignment",
+              "var_name": {
+                "type": "identifier",
+                "value": "value",
+                "text": "value",
+                "offset": 283,
+                "lineBreaks": 0,
+                "line": 13,
+                "col": 5
+              },
+              "value": {
+                "type": "function_call",
+                "fun_name": {
+                  "type": "identifier",
+                  "value": "at",
+                  "text": "at",
+                  "offset": 291,
+                  "lineBreaks": 0,
+                  "line": 13,
+                  "col": 13
+                },
+                "parameters": [
+                  {
+                    "type": "identifier",
+                    "value": "entry",
+                    "text": "entry",
+                    "offset": 294,
+                    "lineBreaks": 0,
+                    "line": 13,
+                    "col": 16
+                  },
+                  {
+                    "type": "number",
+                    "value": 1,
+                    "text": "1",
+                    "offset": 300,
+                    "lineBreaks": 0,
+                    "line": 13,
+                    "col": 22
+                  }
+                ]
+              }
+            },
+            {
+              "type": "function_call",
+              "fun_name": {
+                "type": "identifier",
+                "value": "output",
+                "text": "output",
+                "offset": 308,
+                "lineBreaks": 0,
+                "line": 14,
+                "col": 5
+              },
+              "parameters": [
+                {
+                  "type": "identifier",
+                  "value": "key",
+                  "text": "key",
+                  "offset": 315,
+                  "lineBreaks": 0,
+                  "line": 14,
+                  "col": 12
+                },
+                {
+                  "type": "string",
+                  "value": "\"=\"",
+                  "text": "\"=\"",
+                  "offset": 319,
+                  "lineBreaks": 0,
+                  "line": 14,
+                  "col": 16
+                },
+                {
+                  "type": "identifier",
+                  "value": "value",
+                  "text": "value",
+                  "offset": 323,
+                  "lineBreaks": 0,
+                  "line": 14,
+                  "col": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

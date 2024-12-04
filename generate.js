@@ -13,7 +13,7 @@ async function main() {
     const ast = JSON.parse(astCode);
     const jsCode = generate(ast);
     const baseDir = path.dirname(filename);
-    const baseName = path.basename(filename, ".x.ast");
+    const baseName = path.basename(filename, ".mrus.ast");
     const jsFilename = path.join(baseDir, `${baseName}.js`);
     await fs.writeFile(jsFilename, jsCode);
     console.log(`Wrote ${jsFilename}.`);

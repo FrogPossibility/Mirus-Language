@@ -16,3 +16,4 @@ if gt(n 21) [
 ] else [
     output("Dovresti essere un bambino")
 ]
+

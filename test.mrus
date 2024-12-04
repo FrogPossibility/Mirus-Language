@@ -1,0 +1,46 @@
+// this is an ARRAY
+array1 = <array>{ 1 2 3 4 5 6 7 8 9 0 }
+
+// this is a SET
+set1 = <set>{ 2 4 6 8 0 }
+
+// this is a DICTIONARY
+dict1 = <dict>{"name": "Simone"  "surname": "Camoletto"  "age": 13  "code": 1234 }
+
+// now we stamp in the console the SET the DICTIONARY and the ARRAY with the OUTPUT function
+output("--ARRAY--")
+output(array1)
+output("")
+output("--SET--")
+output(set1)
+output("")
+output("--DICTIONARY--")
+output(dict1)
+output("")
+
+// here we can square every number in the ARRAY and stamp it
+squaredArr = map(array1 [|item|
+    a = mul(item item)
+    add(a 3)
+])
+output("--ARRAY SQUARED--")
+output(squaredArr)
+output("")
+
+// here we can FILTER every number in the ARRAY
+
+filtered = filter(array1 [|item|
+    eq(remainder(item 2) 0)
+])
+output("--ARRAY FILTERED--")
+output("filtered" filtered)
+output("")
+
+// here we can REDUCE every number in the ARRAY
+
+reduced = reduce(array1 [|product item|
+    mul(product item)
+] 1)
+output("--ARRAY REDUCED--")
+output("reduced" reduced)
+output("")

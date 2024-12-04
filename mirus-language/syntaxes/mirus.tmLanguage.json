@@ -1,0 +1,54 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "mirus",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+				"name": "keyword.control.mirus",
+				"match": "\\b(if|else|each)\\b"
+				},
+				{
+					"name": "support.function.math.mrus",
+					"match": "\\b(add|sub|mul|div|remainder|abs|pow|sqrt|gt)\\b"
+				},
+				{
+					"name": "support.function.io.mrus",
+					"match": "\\b(output)\\b"
+				},
+				{
+					"name": "support.function.collection.map",
+					"match": "\\b(entries|get|set|size|array|dict)\\b"
+				},
+				{
+					"name": "support.function.collection.array",
+					"match": "\\b(at|map|filter|reduce|length|join|split)\\b"
+				},
+				{
+					"name": "support.function.string",
+					"match": "\\b(substring|toUpperCase|toLowerCase|concat)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.mirus",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mirus",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.mrus"
+}

@@ -1,16 +1,41 @@
-let dict1 = new Map([[1, 2], [3, 4]]);
-let dict2 = new Map([["a", 2], ["b", 4]]);
-let dict3 = new Map([]);
-set(dict3, "foo", "bar");
-output(get(dict3, "foo"));
-set(dict3, "garage", "out");
-output(dict3);
-output("The dict has", size(dict3), "entries in it.");
-each(entries(dict3), function (entry) {
-	let key = at(entry, 0);
-	let value = at(entry, 1);
-	return output(key, "=", value);
+// this is an ARRAY;
+let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+// this is a SET;
+let set1 = new Set([2, 4, 6, 8, 0]);
+// this is a DICTIONARY;
+let dict1 = new Map([["name", "Simone"], ["surname", "Camoletto"], ["age", 13], ["code", 1234]]);
+// now we stamp in the console the SET the DICTIONARY and the ARRAY with the OUTPUT function;
+output("--ARRAY--");
+output(array1);
+output("");
+output("--SET--");
+output(set1);
+output("");
+output("--DICTIONARY--");
+output(dict1);
+output("");
+// here we can square every number in the ARRAY and stamp it;
+let squaredArr = map(array1, function (item) {
+	let a = mul(item, item);
+	return add(a, 3);
 });
+output("--ARRAY SQUARED--");
+output(squaredArr);
+output("");
+// here we can FILTER every number in the ARRAY;
+let filtered = filter(array1, function (item) {
+	return eq(remainder(item, 2), 0);
+});
+output("--ARRAY FILTERED--");
+output("filtered", filtered);
+output("");
+// here we can REDUCE every number in the ARRAY;
+let reduced = reduce(array1, function (product, item) {
+	return mul(product, item);
+}, 1);
+output("--ARRAY REDUCED--");
+output("reduced", reduced);
+output("");
 /*
 Runtime functions:
 */

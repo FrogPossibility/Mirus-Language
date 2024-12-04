@@ -1,4 +1,4 @@
-# X Program Language Test
+# MIRUS Program Language (Beta)
 
 # Functions:
 

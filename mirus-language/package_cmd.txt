@@ -1,0 +1,3 @@
+cd mirus-language
+vsce package
+vsce publish

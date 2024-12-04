@@ -1,0 +1,350 @@
+{
+  "type": "program",
+  "body": [
+    {
+      "type": "comment",
+      "statements": [
+        {
+          "type": "identifier",
+          "value": "hi",
+          "text": "hi",
+          "offset": 3,
+          "lineBreaks": 0,
+          "line": 1,
+          "col": 4
+        },
+        {
+          "type": "identifier",
+          "value": "this",
+          "text": "this",
+          "offset": 6,
+          "lineBreaks": 0,
+          "line": 1,
+          "col": 7
+        },
+        {
+          "type": "identifier",
+          "value": "is",
+          "text": "is",
+          "offset": 11,
+          "lineBreaks": 0,
+          "line": 1,
+          "col": 12
+        },
+        {
+          "type": "identifier",
+          "value": "a",
+          "text": "a",
+          "offset": 14,
+          "lineBreaks": 0,
+          "line": 1,
+          "col": 15
+        },
+        {
+          "type": "identifier",
+          "value": "comment",
+          "text": "comment",
+          "offset": 16,
+          "lineBreaks": 0,
+          "line": 1,
+          "col": 17
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "statements": [
+        {
+          "type": "identifier",
+          "value": "the",
+          "text": "the",
+          "offset": 28,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 4
+        },
+        {
+          "type": "identifier",
+          "value": "problem",
+          "text": "problem",
+          "offset": 32,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 8
+        },
+        {
+          "type": "identifier",
+          "value": "is",
+          "text": "is",
+          "offset": 40,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 16
+        },
+        {
+          "type": "identifier",
+          "value": "it",
+          "text": "it",
+          "offset": 43,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 19
+        },
+        {
+          "type": "identifier",
+          "value": "doesnt",
+          "text": "doesnt",
+          "offset": 46,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 22
+        },
+        {
+          "type": "identifier",
+          "value": "accept",
+          "text": "accept",
+          "offset": 53,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 29
+        },
+        {
+          "type": "identifier",
+          "value": "symbols",
+          "text": "symbols",
+          "offset": 60,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 36
+        },
+        {
+          "type": "identifier",
+          "value": "and",
+          "text": "and",
+          "offset": 68,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 44
+        },
+        {
+          "type": "identifier",
+          "value": "letter",
+          "text": "letter",
+          "offset": 72,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 48
+        },
+        {
+          "type": "identifier",
+          "value": "with",
+          "text": "with",
+          "offset": 79,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 55
+        },
+        {
+          "type": "identifier",
+          "value": "simbols",
+          "text": "simbols",
+          "offset": 84,
+          "lineBreaks": 0,
+          "line": 2,
+          "col": 60
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "statements": [
+        {
+          "type": "identifier",
+          "value": "this",
+          "text": "this",
+          "offset": 96,
+          "lineBreaks": 0,
+          "line": 3,
+          "col": 4
+        },
+        {
+          "type": "identifier",
+          "value": "is",
+          "text": "is",
+          "offset": 101,
+          "lineBreaks": 0,
+          "line": 3,
+          "col": 9
+        },
+        {
+          "type": "identifier",
+          "value": "a",
+          "text": "a",
+          "offset": 104,
+          "lineBreaks": 0,
+          "line": 3,
+          "col": 12
+        },
+        {
+          "type": "identifier",
+          "value": "problem",
+          "text": "problem",
+          "offset": 106,
+          "lineBreaks": 0,
+          "line": 3,
+          "col": 14
+        }
+      ]
+    },
+    {
+      "type": "function_call",
+      "fun_name": {
+        "type": "identifier",
+        "value": "output",
+        "text": "output",
+        "offset": 117,
+        "lineBreaks": 0,
+        "line": 5,
+        "col": 1
+      },
+      "parameters": [
+        {
+          "type": "string",
+          "value": "\"hii, the comments work but they sucks, really.\"",
+          "text": "\"hii, the comments work but they sucks, really.\"",
+          "offset": 124,
+          "lineBreaks": 0,
+          "line": 5,
+          "col": 8
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "statements": [
+        {
+          "type": "identifier",
+          "value": "and",
+          "text": "and",
+          "offset": 178,
+          "lineBreaks": 0,
+          "line": 6,
+          "col": 4
+        },
+        {
+          "type": "identifier",
+          "value": "i",
+          "text": "i",
+          "offset": 182,
+          "lineBreaks": 0,
+          "line": 6,
+          "col": 8
+        },
+        {
+          "type": "identifier",
+          "value": "cant",
+          "text": "cant",
+          "offset": 184,
+          "lineBreaks": 0,
+          "line": 6,
+          "col": 10
+        },
+        {
+          "type": "identifier",
+          "value": "insert",
+          "text": "insert",
+          "offset": 189,
+          "lineBreaks": 0,
+          "line": 6,
+          "col": 15
+        },
+        {
+          "type": "identifier",
+          "value": "a",
+          "text": "a",
+          "offset": 196,
+          "lineBreaks": 0,
+          "line": 6,
+          "col": 22
+        },
+        {
+          "type": "identifier",
+          "value": "comment",
+          "text": "comment",
+          "offset": 198,
+          "lineBreaks": 0,
+          "line": 6,
+          "col": 24
+        },
+        {
+          "type": "identifier",
+          "value": "after",
+          "text": "after",
+          "offset": 206,
+          "lineBreaks": 0,
+          "line": 6,
+          "col": 32
+        },
+        {
+          "type": "identifier",
+          "value": "a",
+          "text": "a",
+          "offset": 212,
+          "lineBreaks": 0,
+          "line": 6,
+          "col": 38
+        },
+        {
+          "type": "identifier",
+          "value": "function",
+          "text": "function",
+          "offset": 214,
+          "lineBreaks": 0,
+          "line": 6,
+          "col": 40
+        },
+        {
+          "type": "identifier",
+          "value": "or",
+          "text": "or",
+          "offset": 223,
+          "lineBreaks": 0,
+          "line": 6,
+          "col": 49
+        },
+        {
+          "type": "identifier",
+          "value": "other",
+          "text": "other",
+          "offset": 226,
+          "lineBreaks": 0,
+          "line": 6,
+          "col": 52
+        }
+      ]
+    },
+    {
+      "type": "comment",
+      "statements": [
+        {
+          "type": "identifier",
+          "value": "this",
+          "text": "this",
+          "offset": 236,
+          "lineBreaks": 0,
+          "line": 7,
+          "col": 4
+        },
+        {
+          "type": "identifier",
+          "value": "sucks",
+          "text": "sucks",
+          "offset": 241,
+          "lineBreaks": 0,
+          "line": 7,
+          "col": 9
+        }
+      ]
+    }
+  ]
+}

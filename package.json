@@ -1,10 +1,22 @@
 {
   "name": "mylang",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "gen-parser": "nearleyc grammar.ne -o grammar.js"
+  },
+  "pkg": {
+    "targets": [
+      "node14-win-x64"
+    ],
+    "assets": [
+      "parse.js",
+      "generate.js"
+    ]
+  },
+  "bin": {
+    "mirus": "run-2.js"
   },
   "keywords": [],
   "author": "",

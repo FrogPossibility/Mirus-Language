@@ -9,7 +9,7 @@ async function main() {
     await myExec(`node parse.js ${filename}`);
     await myExec(`node generate.js ${filename}.ast`);
     const baseDir = path.dirname(filename);
-    const jsFilename = path.join(baseDir, path.basename(filename, '.x') + '.js');
+    const jsFilename = path.join(baseDir, path.basename(filename, '.mrus') + '.js');
     await myExec(`node ${jsFilename}`, 'green');
 
 }
@@ -24,4 +24,12 @@ async function myExec(command, outputStyle) {
     if (stderr) console.error(chalk.magenta(stderr.trim()));
 }
 
-main().catch(err => console.log(chalk.red(err.message)));
+main()
+    .then(() =>{
+        const filename = process.argv[2];
+        console.log('');
+        console.log(chalk.bgGreenBright("✅ EXECUTED ✅"));
+    })
+    .catch(err => {
+        console.error(chalk.bgRedBright('⚠️ ERROR ⚠️'), chalk.bgRed(err));
+    });

@@ -1,16 +1,5 @@
-let dict1 = new Map([[1, 2], [3, 4]]);
-let dict2 = new Map([["a", 2], ["b", 4]]);
-let dict3 = new Map([]);
-set(dict3, "foo", "bar");
-output(get(dict3, "foo"));
-set(dict3, "garage", "out");
-output(dict3);
-output("The dict has", size(dict3), "entries in it.");
-each(entries(dict3), function (entry) {
-	let key = at(entry, 0);
-	let value = at(entry, 1);
-	return output(key, "=", value);
-});
+let result = add(1, 4, 3);
+output(result);
 /*
 Runtime functions:
 */
