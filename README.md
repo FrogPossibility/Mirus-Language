@@ -1,4 +1,6 @@
 # MIRUS Program Language (Beta)
+## Mirus, mean wonderful, strange, remarkable, amazing, surprising, extraordinary
+You can install the Mirus Extension for VsCode by downloading the .vsix file from releases.
 
 # Functions:
 
